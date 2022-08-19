@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ShoeStore</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="shoe_instructions">
+        Welcome to our shoe store app here you can see a list of shoe and you can join our store and add your favorite shoe
+    </string>
+</resources>

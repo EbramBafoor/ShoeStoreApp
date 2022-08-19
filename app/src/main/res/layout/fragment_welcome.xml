@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".presentation.screens.WelcomeFragment">
+
+
+        <TextView
+            android:id="@+id/welcomeTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WELCOME"
+            android:textSize="26sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/instructionTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Check out some instructions about our Shoe Store"
+            android:textSize="26sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="12dp"
+            />
+
+        <Button
+            android:id="@+id/instructionBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Instruction --->"
+            android:textSize="20sp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="10dp"
+            android:layout_gravity="end"/>
+
+        <ImageView
+            android:layout_width="270dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="70dp"
+            android:src="@drawable/welcome1"
+            android:scaleType="centerCrop"
+            />
+
+    </LinearLayout>
+
+
+
+</layout>
