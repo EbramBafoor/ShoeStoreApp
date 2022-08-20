@@ -4,6 +4,9 @@
 
     >
 
+    <!--ConstraintLayout is used to provide the ability to completely design my UI with the drag and drop feature.
+     -->
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"

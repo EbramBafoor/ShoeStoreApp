@@ -3,6 +3,10 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     >
 
+    <!--
+LinearLayout is used to to structured views in bottom of each other
+-->
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

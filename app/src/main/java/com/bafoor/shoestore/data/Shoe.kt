@@ -7,8 +7,8 @@ import kotlinx.parcelize.Parcelize
 
 @Parcelize
 data class Shoe(
-    val shoesName: String,
-    val company: String,
-    val shoesSize: Int,
-    val description: String,
+    var shoesName: String,
+    var company: String,
+    var shoesSize: String,
+    var description: String,
 ):Parcelable

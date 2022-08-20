@@ -3,7 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     >
 
-
+<!--
+LinearLayout is used to to structured views in bottom of each other
+-->
 
     <LinearLayout
         android:background="@drawable/store_background"

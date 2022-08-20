@@ -1,77 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    >
+    xmlns:tools="http://schemas.android.com/tools">
+    <!--
+LinearLayout is used to to structured views in bottom of each other
+-->
 
-    <LinearLayout
+    <data>
+        <variable
+            name="shoe"
+            type="com.bafoor.shoestore.data.Shoe"/>
+    </data>
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
         tools:context=".presentation.screens.AddFragment">
 
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="add your shoes info"
-        android:textSize="20sp"
-        android:textColor="@color/black"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="12dp"
-        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="10dp"
+            android:text="add your shoes info"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/nameTv"
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:hint="Name"/>
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp">
 
-    </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/nameTv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@={shoe.shoesName}"
+                android:hint="Name" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp">
+        </com.google.android.material.textfield.TextInputLayout>
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/companyTv"
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:hint="Company"/>
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp">
 
-    </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/companyTv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@={shoe.company}"
+                android:hint="Company" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp">
+        </com.google.android.material.textfield.TextInputLayout>
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/sizeTv"
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:inputType="number"
-            android:hint="Size"/>
-    </com.google.android.material.textfield.TextInputLayout>
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp">
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/sizeTv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Size"
+                android:text="@={shoe.shoesSize}"
+                android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/descTv"
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:inputType="text"
-            android:hint="Description"/>
-    </com.google.android.material.textfield.TextInputLayout>
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/descTv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Description"
+                android:text="@={shoe.description}"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
 
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -87,7 +97,6 @@
 
 
     </LinearLayout>
-
 
 
 </layout>

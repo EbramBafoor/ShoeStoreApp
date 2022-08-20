@@ -43,7 +43,7 @@ class AddFragment : Fragment() {
                 viewModels.onEvent(
                     ShoeStoreEvent.AddShoe(
                     Shoe(
-                        shoeName, shoeCompany, shoeSize.toInt(), desc
+                        shoeName, shoeCompany, shoeSize, desc
                     )
                 ))
                 val action = AddFragmentDirections.actionAddFragmentToShoeListFragment()
